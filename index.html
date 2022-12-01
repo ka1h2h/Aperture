@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link href="./index.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Aperture</title>
   </head>
   <body>
     <div class="wrapper">
@@ -37,6 +37,27 @@
               </li>
             </ul>
           </nav>
+          <nav class="navbar">
+            <div class="container">
+              <div class="navbar__wrap">
+                <div class="hamb">
+                  <div class="hamb__field" id="hamb">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                  </div>
+                </div>
+                <ul class="menu" id="menu">
+                  <li><a href="#">Business areas</a></li>
+                  <li><a href="#">Featured images</a></li>
+                  <li><a href="#">Gear cage</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Get template</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="popup" id="popup"></div>
         </div>
       </div>
       <div class="main">
@@ -168,218 +189,261 @@
           </div>
         </div>
         <div class="photo-example">
-            <div class="photo__container">
-                <img src="./05.png" class="photo__img" />
-                <div class="photo__info">
-                    <div class="photo__title">Sunset at Mount Fuji</div>
-                    <div class="photo__description description">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in 
-                        convallis risus egestas non.</div>
-                </div>
-                <div class="icons__example">
-                    <div class="icons__container">
-                      <ul class="icons__items">
-                        <li class="icon__item">
-                          <a class="_icon-time"><span>1"</span></a>
-                        </li>
-                        <li class="icon__item">
-                          <a class="_icon-combined"><span>f/16</span></a>
-                        </li>
-                        <li class="icon__item">
-                          <a class="_icon-iso"><span>400</span></a>
-                        </li>
-                        <li class="icon__item">
-                          <a class="_icon-geo"><span>Japan</span></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                
-
+          <div class="photo__container">
+            <img src="./05.png" class="photo__img" />
+            <div class="photo__info">
+              <div class="photo__title">Sunset at Mount Fuji</div>
+              <div class="photo__description description">
+                Duis tristique sed lorem a vestibulum. Cras commodo consequat
+                orci, in convallis risus egestas non.
+              </div>
             </div>
+            <div class="icons__example">
+              <div class="icons__container">
+                <ul class="icons__items">
+                  <li class="icon__item">
+                    <a class="_icon-time"><span>1"</span></a>
+                  </li>
+                  <li class="icon__item">
+                    <a class="_icon-combined"><span>f/16</span></a>
+                  </li>
+                  <li class="icon__item">
+                    <a class="_icon-iso"><span>400</span></a>
+                  </li>
+                  <li class="icon__item">
+                    <a class="_icon-geo"><span>Japan</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-
-
         <div class="tools">
-            <div class="tools__container">
-                <div class="tools__info">
-                    <div class="tools__info-container">
-                    <div class="tools__subtitle">The Gear cage</div>
-                    <div class="tools__title">The tools that we use.</div>
-                    <div class="toools__description">The say that "no place is boring if you've had a good night's sleep and have a pocket full of unexposed film".
-                         While we don't shoot (a lot) of film these days — 
-                         these are the tools that we actually use everyday to capture the amazing things around us.</div>
-                    <div class="tools__btn-container btn-container">
-                        <div class="point"></div>
-                        <a class="tools__btn white-btn">Check it out</a>
-                      </div>
+          <div class="tools__container">
+            <div class="tools__info">
+              <div class="tools__info-container">
+                <div class="tools__subtitle">The Gear cage</div>
+                <div class="tools__title">The tools that we use.</div>
+                <div class="toools__description">
+                  The say that "no place is boring if you've had a good night's
+                  sleep and have a pocket full of unexposed film". While we
+                  don't shoot (a lot) of film these days — these are the tools
+                  that we actually use everyday to capture the amazing things
+                  around us.
                 </div>
-            </div>
-                <div class="tools__img-container">
-                    <img src="./06.png" class="tools__img" />
-                    <div class="icons__example">
-                        <div class="icons__container">
-                          <ul class="icons__items">
-                            <li class="icon__item">
-                              <a class="_icon-time"><span>0,8"</span></a>
-                            </li>
-                            <li class="icon__item">
-                              <a class="_icon-combined"><span>f/5,6</span></a>
-                            </li>
-                            <li class="icon__item">
-                              <a class="_icon-iso"><span>100</span></a>
-                            </li>
-                            <li class="icon__item">
-                              <a class="_icon-geo"><span>Sweden</span></a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                <div class="tools__btn-container btn-container">
+                  <div class="point"></div>
+                  <a class="tools__btn white-btn">Check it out</a>
                 </div>
+              </div>
             </div>
+            <div class="tools__img-container">
+              <img src="./06.png" class="tools__img" />
+              <div class="icons__example">
+                <div class="icons__container">
+                  <ul class="icons__items">
+                    <li class="icon__item">
+                      <a class="_icon-time"><span>0,8"</span></a>
+                    </li>
+                    <li class="icon__item">
+                      <a class="_icon-combined"><span>f/5,6</span></a>
+                    </li>
+                    <li class="icon__item">
+                      <a class="_icon-iso"><span>100</span></a>
+                    </li>
+                    <li class="icon__item">
+                      <a class="_icon-geo"><span>Sweden</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="photo-example">
-            <div class="photo__container">
-                <img src="./07.png" class="photo__img" />
-                <div class="photo__info">
-                    <div class="photo__title">Monstera Leafs</div>
-                    <div class="photo__description description">Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, 
-                        ut faucibus orci tincidunt.</div>
-                </div>
-                <div class="icons__example">
-                    <div class="icons__container">
-                      <ul class="icons__items">
-                        <li class="icon__item">
-                          <a class="_icon-time"><span>1/400s</span></a>
-                        </li>
-                        <li class="icon__item">
-                          <a class="_icon-combined"><span>f/3,5</span></a>
-                        </li>
-                        <li class="icon__item">
-                          <a class="_icon-iso"><span>100</span></a>
-                        </li>
-                        <li class="icon__item">
-                          <a class="_icon-geo"><span class="costa-rica">Costa Rica</span></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                
-
+          <div class="photo__container">
+            <img src="./07.png" class="photo__img" />
+            <div class="photo__info">
+              <div class="photo__title">Monstera Leafs</div>
+              <div class="photo__description description">
+                Vestibulum sit amet urna turpis. Mauris euismod elit et nisi
+                ultrices, ut faucibus orci tincidunt.
+              </div>
             </div>
+            <div class="icons__example">
+              <div class="icons__container">
+                <ul class="icons__items">
+                  <li class="icon__item">
+                    <a class="_icon-time"><span>1/400s</span></a>
+                  </li>
+                  <li class="icon__item">
+                    <a class="_icon-combined"><span>f/3,5</span></a>
+                  </li>
+                  <li class="icon__item">
+                    <a class="_icon-iso"><span>100</span></a>
+                  </li>
+                  <li class="icon__item">
+                    <a class="_icon-geo"
+                      ><span class="costa-rica">Costa Rica</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-
         <div class="our__clients">
-            <div class="our__clients-container">
-                <div class="our__clients-title title">Past clients</div>
-                <div class="our__clients-description subtitle">Trusted by your favourite companies</div>
-                <div class="our__clients-logos">
-                <div class="logos__container">
-                    <img src="./logos/01.png" class="logos" />
-                </div>
-                <div class="logos__container">
-                    <img src="./logos/02.png" class="logos" />
-                </div>
-                    <div class="logos__container">
-                    <img src="./logos/03.png" class="logos" />
-                </div>
-                    <div class="logos__container">
-                    <img src="./logos/04.png" class="logos" />
-                </div>
-                    <div class="logos__container">
-                    <img src="./logos/05.png" class="logos" />
-                </div>
-                </div>
+          <div class="our__clients-container">
+            <div class="our__clients-title title">Past clients</div>
+            <div class="our__clients-description subtitle">
+              Trusted by your favourite companies
             </div>
+            <div class="our__clients-logos">
+              <div class="logos__container">
+                <img src="./logos/01.png" class="logos" />
+              </div>
+              <div class="logos__container">
+                <img src="./logos/02.png" class="logos" />
+              </div>
+              <div class="logos__container">
+                <img src="./logos/03.png" class="logos" />
+              </div>
+              <div class="logos__container">
+                <img src="./logos/04.png" class="logos" />
+              </div>
+              <div class="logos__container">
+                <img src="./logos/05.png" class="logos" />
+              </div>
+            </div>
+          </div>
         </div>
-
         <div class="photo-example">
-            <div class="photo__container">
-                <img src="./08.png" class="photo__img" />
-                <div class="photo__info">
-                    <div class="photo__title">Star fall in the Himalayas</div>
-                    <div class="photo__description description">Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, 
-                        vulputate ut ligula.</div>
-                </div>
-                <div class="icons__example">
-                    <div class="icons__container">
-                      <ul class="icons__items">
-                        <li class="icon__item">
-                          <a class="_icon-time"><span>6"</span></a>
-                        </li>
-                        <li class="icon__item">
-                          <a class="_icon-combined"><span>f/11</span></a>
-                        </li>
-                        <li class="icon__item">
-                          <a class="_icon-iso"><span>800</span></a>
-                        </li>
-                        <li class="icon__item">
-                          <a class="_icon-geo"><span class="costa-rica">Nepal</span></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                
-
+          <div class="photo__container">
+            <img src="./08.png" class="photo__img" />
+            <div class="photo__info">
+              <div class="photo__title">Star fall in the Himalayas</div>
+              <div class="photo__description description">
+                Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex,
+                condimentum dapibus congue et, vulputate ut ligula.
+              </div>
             </div>
+            <div class="icons__example">
+              <div class="icons__container">
+                <ul class="icons__items">
+                  <li class="icon__item">
+                    <a class="_icon-time"><span>6"</span></a>
+                  </li>
+                  <li class="icon__item">
+                    <a class="_icon-combined"><span>f/11</span></a>
+                  </li>
+                  <li class="icon__item">
+                    <a class="_icon-iso"><span>800</span></a>
+                  </li>
+                  <li class="icon__item">
+                    <a class="_icon-geo"
+                      ><span class="costa-rica">Nepal</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-
-
         <div class="need-help">
-            <div class="need-help__container">
-                <div class="need-help-title title">Need help with photography <br> or videography?</div>
-                <div class="need-help-description subtitle">We're here for you!</div>
-                <div class="need-help-btn-container btn-container">
-                    <div class="point"></div>
-                    <a class="need-help-btn white-btn">Get in touch</a>
-                  </div>
+          <div class="need-help__container">
+            <div class="need-help-title title">
+              Need help with photography <br />
+              or videography?
             </div>
+            <div class="need-help-description subtitle">
+              We're here for you!
+            </div>
+            <div class="need-help-btn-container btn-container">
+              <div class="point"></div>
+              <a class="need-help-btn white-btn">Get in touch</a>
+            </div>
+          </div>
         </div>
-
-
       </div>
       <footer class="footer">
         <div class="footer__container">
-            <div class="footer__upper-container">
-
-          
+          <div class="footer__upper-container">
             <div class="footer__logo-container logo-container">
-                <img src="./logo.png" class="footer__logo logo" />
-                <div class="footer__description">Photographers & videographers capturing the world around us.</div>
-                
+              <img src="./logo.png" class="footer__logo logo" />
+              <div class="footer__description">
+                Photographers & videographers capturing the world around us.
               </div>
-              <div class="footer__navigation">
+            </div>
+            <div class="footer__navigation">
               <div class="business-areas">
-               <h5 class="business-areas__title description">Business areas</h5>
+                <h5 class="business-areas__title description">
+                  Business areas
+                </h5>
                 <ul class="business-areas__container">
-                    <li class="business-areas__item"><a class="business-areas__link-title description" href="#">Product Photography</a></li>
-                    <li class="business-areas__item"><a class="business-areas__link description" href="#">Architecture Photography</a></li>
-                    <li class="business-areas__item"><a class="business-areas__link description" href="#">Drone Photography</a></li>
-                    <li class="business-areas__item"><a class="business-areas__link description" href="#">Wildlife Photography</a></li>
+                  <li class="business-areas__item">
+                    <a class="business-areas__link-title description" href="#"
+                      >Product Photography</a
+                    >
+                  </li>
+                  <li class="business-areas__item">
+                    <a class="business-areas__link description" href="#"
+                      >Architecture Photography</a
+                    >
+                  </li>
+                  <li class="business-areas__item">
+                    <a class="business-areas__link description" href="#"
+                      >Drone Photography</a
+                    >
+                  </li>
+                  <li class="business-areas__item">
+                    <a class="business-areas__link description" href="#"
+                      >Wildlife Photography</a
+                    >
+                  </li>
                 </ul>
               </div>
               <div class="pages">
                 <h5 class="pages__title description">Pages</h5>
                 <ul class="pages__container">
-                    <li class="pages__item"><a class="pages_link-title description" href="#">Gear cage</a></li>
-                    <li class="pages__item"><a class="pages__link description" href="#">Featured images</a></li>
-                    <li class="pages__item"><a class="pages__link description" href="#">Contact</a></li>
-                    <li class="pages__item"><a class="pages__link description" href="#">Style guide</a></li>
-                    <li class="pages__item"><a class="pages__link description" href="#">Instructions</a></li>
-                    <li class="pages__item"><a class="pages__link description" href="#">Changelog</a></li>
+                  <li class="pages__item">
+                    <a class="pages_link-title description" href="#"
+                      >Gear cage</a
+                    >
+                  </li>
+                  <li class="pages__item">
+                    <a class="pages__link description" href="#"
+                      >Featured images</a
+                    >
+                  </li>
+                  <li class="pages__item">
+                    <a class="pages__link description" href="#">Contact</a>
+                  </li>
+                  <li class="pages__item">
+                    <a class="pages__link description" href="#">Style guide</a>
+                  </li>
+                  <li class="pages__item">
+                    <a class="pages__link description" href="#">Instructions</a>
+                  </li>
+                  <li class="pages__item">
+                    <a class="pages__link description" href="#">Changelog</a>
+                  </li>
                 </ul>
               </div>
             </div>
+          </div>
+          <div class="footer__lower-container">
+            <div class="copyright description">
+              © Aperture Photography, Inc. All rights reserved. Licensing.
             </div>
-            <div class="footer__lower-container">
-                <div class="copyright description">© Aperture Photography, Inc. All rights reserved. Licensing.</div>
-                <ul class="footer__list-items">
-                    <li class="item"><a href="#" class="_icon-tw"></a></li>
-                    <li class="item"><a href="#" class="_icon-insta"></a></li>
-                    <li class="item"><a href="#" class="_icon-fb"></a></li>
-                </ul>
-            </div>
+            <ul class="footer__list-items">
+              <li class="item"><a href="#" class="_icon-tw"></a></li>
+              <li class="item"><a href="#" class="_icon-insta"></a></li>
+              <li class="item"><a href="#" class="_icon-fb"></a></li>
+            </ul>
+          </div>
         </div>
       </footer>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
